@@ -15,6 +15,7 @@ const appRoutes: Routes = [
 {path: 'Project', component: ProjectComponentComponent},
 {path: 'Contact', component: ContactComponentComponent},
 {path: 'Exp', component: ExpComponentComponent},
+{path: 'Exp/:id', component: ExpComponentComponent},
 ];
 
 
