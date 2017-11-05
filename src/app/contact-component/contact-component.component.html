@@ -1,3 +1,47 @@
-<p>
-  contact-component works!
-</p>
+<div class="container">
+  <div class="row">
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">  
+    <div class="form-group col-md-2">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" ngModel name="email" email  required>
+    </div> 
+    <div class="form-group col-md-2">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" ngModel name="password">
+    </div>
+ 
+  <div class="form-group col-md-2">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" ngModel name="address">
+  </div>
+   <div class="form-row">
+    <div class="form-group col-md-2">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" ngModel name="city">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control" ngModel name="state">
+        <option selected>Choose...</option>
+        <option>MD</option>
+        <option>NY</option>
+        <option>CA</option>
+        <option>TX</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip" ngModel name="zipcode">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" ngModel name="checkme"> Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+</div>
+</div>
